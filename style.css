@@ -19,6 +19,18 @@ body{
 }
 
 #userName{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 1000;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#bio{
     color: #bbb;
     font-size: 1rem;
     font-weight: 600;
