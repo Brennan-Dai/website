@@ -17,6 +17,9 @@ body{
 .accordion-button.collapsed::after {
   background: var(--bgColor);
 }
+.accordion-button-focus {
+  border-color:#0000FFFF;
+}
 
 #userPhoto{
     width: 110px;
