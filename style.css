@@ -20,6 +20,10 @@ body{
 .accordion-button-focus {
   border-color:#0000FFFF;
 }
+.accordion-button-focus {
+  box-shadow:#0000FFFF;
+}
+
 
 #userPhoto{
     width: 110px;
