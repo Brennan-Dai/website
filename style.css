@@ -11,11 +11,8 @@ body{
     font-family: 'Karla' !important;
 }
 
-.accordion-button.collapsed {
-  background: var(--bgColor);
-}
-.accordion-button.collapsed::after {
-  background: var(--bgColor);
+.accordion {
+  color:#E6E6E6;
 }
 .accordion-button-focus {
   border-color:#0000FFFF;
