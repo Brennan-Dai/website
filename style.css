@@ -14,6 +14,9 @@ body{
 }
 
 .accordion-button:not(.collapsed)::after {
+    background-color: #000000;
+}
+.accordion:not(.collapsed)::after {
     background-color: #FFFFFF;
 }
 
