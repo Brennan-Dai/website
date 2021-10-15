@@ -21,19 +21,18 @@
 </script>
     
 <script>
-        var urlArray = [
-    "http://www.google.com",
-    "http://www.yahoo.com",
-    "http://www.stackoverflow.com"
-];
+    var sites = [
+        'http://www.google.com',
+        'http://www.stackoverflow.com',
+        'http://www.example.com',
+        'http://www.youtube.com'
+    ];
 
-function randomUrl() {
-    var randomNumber = Math.floor(Math.random() * urlArray.length);
-    var newUrl = urlArray[randomNumber];
-    //window.location.href = newUrl;
-    document.body.innerHTML += "<br>Redirect to: " + newUrl;
-}
-    </script>
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
 
 <body>
     
@@ -99,7 +98,7 @@ function randomUrl() {
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <a class="link" href="randomUrl()" target="_blank">I'm Feeling Lucky</a>
+        <a class="link" href="#" onclick="randomSite();" target="_blank">I'm Feeling Lucky</a>
       </div>
     </div>
   </div>
