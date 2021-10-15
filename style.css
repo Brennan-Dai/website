@@ -15,7 +15,7 @@ body{
 
 .accordion-button:focus {
     box-shadow: none !important;
-    border-color: none !important;
+    border-color: rgba(0,0,0,.125) !important;
 }
 
 
