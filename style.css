@@ -17,10 +17,14 @@ body{
     box-shadow: none !important;
     border-color: rgba(0,0,0,.125) !important;
 }
-.accordion-item {
+.accordion-item.collapsed {
   background-color: #FFFFFF;
   border: 0px solid rgba(0, 0, 0, 0.125);
-
+}
+.accordion.collapsed {
+  background-color: #FFFFFF;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
 
 #userPhoto{
     width: 110px;
