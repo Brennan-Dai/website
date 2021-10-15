@@ -11,7 +11,9 @@ body{
     font-family: 'Karla' !important;
 }
 
-
+.accordion-button:not(.collapsed)::after {
+    background-color: black;
+}
 
 #userPhoto{
     width: 110px;
