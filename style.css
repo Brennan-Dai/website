@@ -17,6 +17,9 @@ body{
     box-shadow: none !important;
     border-color: rgba(0,0,0,.125) !important;
 }
+.accordion-item {
+  background-color: #FFFFFF;
+  border: 0px solid rgba(0, 0, 0, 0.125);
 
 
 #userPhoto{
