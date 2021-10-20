@@ -35,7 +35,7 @@ body{
 #userPhoto{
     width: 138px;
     height: 230px;
-    display: block;
+    display: inline;
     margin: 35px auto 20px;
     border-radius: 5%;
 }
@@ -45,7 +45,7 @@ body{
     font-size: 1.45rem;
     font-weight: 1500;
     line-height: 1.25;
-    display: block;
+    display: inline;
     font-family: var(--font);
     width: 100%;
     text-align: center;
@@ -57,7 +57,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.25;
-    display: block;
+    display: inline;
     font-family: var(--font);
     width: 100%;
     text-align: center;
