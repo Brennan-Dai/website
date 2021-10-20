@@ -50,6 +50,7 @@ body{
     width: 100%;
     text-align: center;
     text-decoration: none;
+    float: right
 }
 
 #bio{
@@ -62,6 +63,7 @@ body{
     width: 100%;
     text-align: center;
     text-decoration: none;
+    float: right
 }
 
 #links{
