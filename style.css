@@ -35,7 +35,7 @@ body{
 #userPhoto{
     width: 138px;
     height: 230px;
-    display: inline-block;
+    display: block;
     margin: 35px auto 20px;
     border-radius: 5%;
 }
