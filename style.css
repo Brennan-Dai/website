@@ -35,9 +35,9 @@ body{
 #userPhoto{
     width: 138px;
     height: 230px;
-    float: left;
     margin: 35px auto 20px;
     border-radius: 5%;
+    display: block;
 }
 
 #userName{
@@ -48,8 +48,7 @@ body{
     font-family: var(--font);
     width: 100%;
     text-align: center;
-    vertical-align: center;
-    text-decoration: none;
+    display: block;
 }
 
 #bio{
@@ -61,6 +60,7 @@ body{
     width: 100%;
     text-align: center;
     text-decoration: none;
+    display: block;
 }
 
 #links{
