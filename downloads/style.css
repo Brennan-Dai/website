@@ -21,7 +21,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #0f62fe;
+    color: #FFFFFF;
 }
 
 #file-list {
@@ -32,12 +32,8 @@ h1 {
 
 #file-list a {
     display: block;
-    color: #4caf50;
+    color: #2779F6;
     padding: 5px 0;
     text-decoration: none;
     transition: color 0.3s;
-}
-
-#file-list a:hover {
-    color: #81c784;
 }
