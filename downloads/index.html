@@ -13,26 +13,44 @@
             <!-- Files will be listed here -->
         </div>
     </div>
-
     <script>
         const user = 'Brennan-Dai'; // Replace with your GitHub username
         const repo = 'website'; // Replace with your repository name
         const path = 'downloads/files'; // Replace with the path to your files
-
+    
         fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`)
             .then(response => response.json())
             .then(files => {
                 const fileListDiv = document.getElementById('file-list');
                 files.forEach(file => {
                     const link = document.createElement('a');
-                    link.href = file.download_url;
                     link.textContent = file.name;
-                    link.setAttribute('download', file.name);
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        downloadFile(file.download_url, file.name);
+                    });
+    
                     fileListDiv.appendChild(link);
                     fileListDiv.appendChild(document.createElement('br'));
                 });
             })
             .catch(error => console.error('Error loading files:', error));
+    
+        function downloadFile(url, fileName) {
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const href = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = href;
+                    link.setAttribute('download', fileName);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(href);
+                })
+                .catch(error => console.error('Error downloading file:', error));
+        }
     </script>
 </body>
 </html>
