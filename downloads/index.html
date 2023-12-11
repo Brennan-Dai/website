@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Download Files</h1>
+        <div id="file-list">
+            <!-- Files will be listed here -->
+        </div>
+    </div>
+
+    <script>
+        const user = 'your-username'; // Replace with your GitHub username
+        const repo = 'your-repo'; // Replace with your repository name
+        const path = 'path/to/your/files'; // Replace with the path to your files
+
+        fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`)
+            .then(response => response.json())
+            .then(files => {
+                const fileListDiv = document.getElementById('file-list');
+                files.forEach(file => {
+                    const link = document.createElement('a');
+                    link.href = file.download_url;
+                    link.textContent = file.name;
+                    link.download = file.name;
+                    fileListDiv.appendChild(link);
+                    fileListDiv.appendChild(document.createElement('br'));
+                });
+            })
+            .catch(error => console.error('Error loading files:', error));
+    </script>
+</body>
+</html>
