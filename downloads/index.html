@@ -27,7 +27,7 @@
                     const link = document.createElement('a');
                     link.href = file.download_url;
                     link.textContent = file.name;
-                    link.download = file.name;
+                    link.setAttribute('download', file.name);
                     fileListDiv.appendChild(link);
                     fileListDiv.appendChild(document.createElement('br'));
                 });
